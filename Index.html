@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanulást Segítő Weboldalak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tanulást Segítő Weboldalak</h1>
+        <p>Fedezd fel a tanulás világát kényelmesen és hatékonyan!</p>
+    </header>
+    <main>
+        <section class="survey">
+            <h2>Ismertség Felmérése</h2>
+            <form id="surveyForm">
+                <div class="form-group">
+                    <label for="website">Weboldal neve:</label>
+                    <input type="text" id="website" name="website" placeholder="Pl. Quizlet">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Ismertség értékelése (1-5):</label>
+                    <select id="rating" name="rating">
+                        <option value="1">1 - Egyáltalán nem ismert</option>
+                        <option value="2">2 - Kicsit ismert</option>
+                        <option value="3">3 - Közepesen ismert</option>
+                        <option value="4">4 - Jól ismert</option>
+                        <option value="5">5 - Nagyon ismert</option>
+                    </select>
+                </div>
+                <button type="button" onclick="submitForm()">Értékelés beküldése</button>
+            </form>
+            <div id="result"></div>
+        </section>
+
+        <section class="guidelines">
+            <h2>Bemutatási Szempontok</h2>
+            <ul>
+                <li>Hogyan támogatja a tanulást (pl. tesztek, anyagok)?</li>
+                <li>Mennyire kényelmes és könnyen elsajátítható?</li>
+                <li>Van-e költsége?</li>
+                <li>Milyen eszközökről használható?</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Katarina</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
